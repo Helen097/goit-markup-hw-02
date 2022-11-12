@@ -6,10 +6,9 @@
   --logo-color: #000000;
 }
 body {
-  color: #212121;
-  background-color: #ffffff;
   font-family: Roboto, sans-serif;
 }
+
 .link {
   text-decoration: none;
 }
@@ -42,7 +41,7 @@ span.header-logo {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-header-color);
+  color: var(--second-text-color);
 }
 .header-mail:hover,
 .header-mail:focus,
@@ -84,7 +83,7 @@ span.header-logo {
 }
 .servise-btn:focus,
 .servise-btn:hover {
-  background: var(--second-logo-color);
+  color: var(--second-logo-color);
 }
 
 /*-------- qualitie-------- */
@@ -112,7 +111,7 @@ span.header-logo {
 .work-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-header-color);
@@ -197,6 +196,19 @@ span.footer-logo {
 
 /*---------- portfolio ---------- */
 
+.portfolio-hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip-rect: (0000);
+  overflow: hidden;
+}
+
 .portfolio-all-btn {
   font-family: 'Roboto';
   font-style: normal;
@@ -207,8 +219,8 @@ span.footer-logo {
   letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  color: var(--primary-header-color);
-  background: #2196f3;
+  background: #F5F4FA;
+  
   cursor: pointer;
 }
 
@@ -262,11 +274,13 @@ span.footer-logo {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--second-header-color); 
+  background: #F5F4FA;
   border: 0;
   border-radius: 4px;
-  background: #F5F4FA;
-  color: var(--second-header-color);
+  
   cursor: pointer;
+
 }
 
 .portfolio-title {
@@ -281,11 +295,9 @@ span.footer-logo {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+
 .portfolio-all-btn:hover,
-.portfolio-all-btn:focus {
-  background-color: #2196f3;
- 
-}
+.portfolio-all-btn:focus,
 .portfolio-site-btn:hover,
 .portfolio-site-btn:focus,
 .portfolio-app-btn:hover,
@@ -294,7 +306,8 @@ span.footer-logo {
 .portfolio-design-btn:focus,
 .portfolio-marketing-btn:hover,
 .portfolio-marketing-btn:focus {
-  background: #F5F4FA;
+  background-color: #2196f3;
+  color: var(--primary-header-color);
 }
 
 /*---------- footer-portfolio ---------- */
