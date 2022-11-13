@@ -4,8 +4,13 @@
   --second-text-color: #757575;
   --second-logo-color: #2196f3;
   --logo-color: #000000;
+  --page-second-background: #2f303a;
+  --button-page-background: #F5F4FA;
+  --second-background-color: #188CE8;
+  --link-rgba-color: rgba(255, 255, 255, 0.6);
 }
 body {
+  color: #212121;
   font-family: Roboto, sans-serif;
 }
 
@@ -55,7 +60,7 @@ span.header-logo {
 /*-------- main-------- */
 
 .hero {
-  background: #2f303a;
+  background: var(--page-second-background);
 }
 .title {
   font-weight: 900;
@@ -75,7 +80,7 @@ span.header-logo {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-header-color);
-  background: #2196F3;
+  background: var(--second-logo-color);
   
 }
 .servise-cursor {
@@ -83,7 +88,7 @@ span.header-logo {
 }
 .servise-btn:focus,
 .servise-btn:hover {
-  color: var(--second-logo-color);
+  background-color: var(--second-background-color);
 }
 
 /*-------- qualitie-------- */
@@ -120,7 +125,7 @@ span.header-logo {
 /*--------- team --------- */
 
 .team {
-  background: #f5f4fa;
+  background: var(--button-page-background);
 }
 .team-title {
   font-weight: 700;
@@ -149,7 +154,7 @@ span.header-logo {
 /*---------- footer ---------- */
 
 .footer {
-  background: #2f303a;
+  background: var(--page-second-background);
 }
 
 .footer-logo {
@@ -176,14 +181,14 @@ span.footer-logo {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-rgba-color);
 }
 .footer-tel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-rgba-color);
 }
 .footer-link:hover,
 .footer-link:focus,
@@ -219,7 +224,7 @@ span.footer-logo {
   letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: var(--button-page-background);
   
   cursor: pointer;
 }
@@ -234,7 +239,7 @@ span.footer-logo {
   letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: var(--button-page-background);
   color: var(--second-header-color);
   cursor: pointer;
 }
@@ -248,7 +253,7 @@ span.footer-logo {
   letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: var(--button-page-background);
   color: var(--second-header-color);
   cursor: pointer;
 }
@@ -262,7 +267,7 @@ span.footer-logo {
   letter-spacing: 0.03em;
   border: 0;
   border-radius: 4px;
-  background: #F5F4FA;
+  background: var(--button-page-background);
   color: var(--second-header-color);
   cursor: pointer;
 }
@@ -275,7 +280,7 @@ span.footer-logo {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-header-color); 
-  background: #F5F4FA;
+  background: var(--button-page-background);
   border: 0;
   border-radius: 4px;
   
@@ -306,7 +311,7 @@ span.footer-logo {
 .portfolio-design-btn:focus,
 .portfolio-marketing-btn:hover,
 .portfolio-marketing-btn:focus {
-  background-color: #2196f3;
+  background-color: var(--second-logo-color);
   color: var(--primary-header-color);
 }
 
@@ -317,7 +322,7 @@ span.footer-logo {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-rgba-color);
 }
 .footer-mailto-to:hover,
 .footer-mailto-to:focus {
